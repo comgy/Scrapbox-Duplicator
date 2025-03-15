@@ -1,3 +1,6 @@
 {
-    "imports": {}
+  "imports": {
+    "@core/unknownutil": "jsr:@core/unknownutil@^4.3.0",
+    "@cosense/std": "jsr:@cosense/std@^0.29.9"
+  }
 }
