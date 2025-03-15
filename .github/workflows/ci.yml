@@ -7,13 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: denoland/setup-deno@v1
+      - uses: denoland/setup-deno@v2
         with:
-          deno-version: "1.18.2"
+          deno-version: v2.x
       - name: Check fmt
         run: deno fmt --check
       - name: Run lint
         run: deno lint
       - name: Run type check
         run: deno cache *.ts
-
